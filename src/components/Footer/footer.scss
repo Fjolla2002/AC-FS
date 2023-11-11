@@ -1,0 +1,103 @@
+.footer {
+    padding: 50px 0 250px 0;
+    font-family: 'Apercu Mono Pro Regular'; 
+    color: #727272;
+
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #001391;
+
+        #logo-icon {
+            display: none;
+        }
+
+        .icons {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .human-icon {
+                margin-top: 100px;
+            }
+        }
+
+        .footer-category {
+            display: flex;
+            flex-direction: column;
+
+            span {
+                color: #727272;
+                font-size: 12px;
+                margin: 8px 0;
+            }
+
+            .category {
+                a {
+                    font-size: 12px;
+                    color: #001391;
+                    margin: 8px 0;
+                    text-decoration: none;
+    
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        padding: 20px;
+        font-size: 10px;
+    }
+
+    .copyright {
+        font-size: 10px;
+        
+        p {
+            margin-top: 16px;
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .footer {
+        overflow: hidden;
+
+        .footer-top {
+            flex-direction: column;
+
+            #logo-icon {
+                display: block;
+                margin-bottom: 30px;
+
+            }
+
+            .footer-category {
+                margin-bottom: 20px;
+            }
+
+            .icons {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                position: relative;
+
+                .icon {
+                    display: none;
+                }
+            
+
+                .human-icon {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                }
+
+                
+            }
+        }
+    }
+}

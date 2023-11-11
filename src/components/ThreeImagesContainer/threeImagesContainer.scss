@@ -1,0 +1,60 @@
+.images-content {
+    .single-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            object-fit: contain;
+        }
+
+        span {
+            padding: 10px 0;
+            font-size: 12px;
+            font-family: 'Apercu Mono Pro Regular'; 
+        }
+    }
+
+    .two-images {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .two-images-col {
+            width: 48%;
+
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 20px;
+            }
+
+            span {
+                padding: 10px 0;
+                font-size: 12px;
+                font-family: 'Apercu Mono Pro Regular'; 
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .images-content {
+        .single-image {
+            span {
+                font-size: 10px;
+            }
+        }
+
+        .two-images {
+            .two-images-col {
+                span {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

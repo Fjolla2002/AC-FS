@@ -1,0 +1,40 @@
+#powerCouple {
+    padding: 200px 0;
+    border-bottom: 2px solid #00000080;
+
+    .banner-content {
+        .banner-image {
+            background-color: #dadee6;
+
+            img {
+                padding-top: 50px;
+                height: 100vh;
+                object-fit: contain;
+            }
+        }
+    }
+
+    .table-container {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    #powerCouple {
+        overflow: hidden;
+        .banner-content {
+            .banner-image {
+                background-color: var(--white-back);
+                
+                .image {
+
+                  img {
+                    border-radius: 20px;
+                    height: 50vh;
+                    background-color: #dadee6;
+                  }
+                }
+            }
+        }
+    }
+}

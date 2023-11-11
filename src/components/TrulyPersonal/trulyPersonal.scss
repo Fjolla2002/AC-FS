@@ -1,0 +1,52 @@
+#trulyPersonal {
+    padding: 200px 0;
+
+    .banner-content {
+        .banner-image {
+            background-color: #e6e6e6;
+            .image {
+                padding: 100px 50px;
+            }
+        }
+    }
+
+    .card-image {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 20px;
+        }
+
+        span {
+            padding: 10px 0;
+            font-size: 12px;
+            font-family: 'Apercu Mono Pro Regular';
+            color: #00000080; 
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #trulyPersonal {
+        overflow: hidden;
+        .banner-content {
+            .banner-image {
+                background-color: var(--white-back);
+    
+                .image {
+                    background-color: #e6e6e6;
+                    border-radius: 20px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
